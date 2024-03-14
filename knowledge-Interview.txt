@@ -1,0 +1,40 @@
+OOP :
+có 4 phạm vi truy cập class : 	private :truy cập nội bộ class
+				protected:truy cập trong và ngoài package , truy cập ngoài phải thông qua tính kế thừa
+				default:truy cập trong cùng package
+				public:truy cập bất kì đâu
+có 4 tính chất : 
+	Tính trừu trượng(abstract): khái quát một vật hoặc 1 cái gì đó mà không cần đi vào chi tiết
+	Tính kế thừa (inheritance): tái sử dụng (kế thừa) lại các thuộc tính, phương thức ở class khác
+	Tính đóng gói(encapsulation):đóng gói attributes, methods thành class nhằm che giấu và đảm bảo sự toàn vẹn của dữ liệu ( getter , setter )
+	Tính đa hình (polumoriphism) : chỉ sự đa hình thái, chẳng hạn cùng có một phương thức giống nhau nhưng tùy vào tham số 
+					truyền vào hay sự cài đặt của lớp con mà nó thực hiện các công việc khác nhau. 
+
+SQL : 
+Primary key : 1 Bảng thì chỉ có 1 primary key không thể chứa giá trị null
+Unique key : có thể không có hoặc có nhiều unique key , có thể chứa giá trị null
+Having : 	Dùng để lọc các kết quả truy vấn dựa trên những hàm tổng hợp hoặc theo nhóm, 
+			Luôn triển khai cùng và dùng sau với lệnh GROUPBY
+			Chỉ dùng với lệnh SELECT
+			được dùng để lọc nhóm
+Where: 	Triển khai điều kiện mà không cần cùng với lệnh GROUPBY, luôn dùng trước GROUPBY
+		dùng với nhiều lệnh UPDATE, DELETE , SELECT
+
+Like: dùng để so sánh 1 giá trị với giá trị tương tự , ( %a : kết thúc bằng kí tự a, a% : bắt đầu bằng kí tự a ... 
+
+inner join : trả về bản ghi có giá trị phù hợp trong cả 2 bảng
+left join : trả về bản ghi từ bảng bên trái và bản ghi trùng với bảng bên phải ( right join ngược lại)
+outer join: trả về tất cả bản ghi khi có kết quả phù hợp với bảng bên trái hoặc bên phỉa
+
+	
+Dự án em đang làm : Công ty bên Nhật làm 2 năm , công nghệ cũ : Struts, Java 8 - 11 ( chủ yếu là maintain dự án )
+					hầu như là toàn làm chủ yếu về nativeSQL , 
+					Những câu lệnh SQL khi truy vấn của họ hầu như đã tối ưu 
+						( tạo index hợp lý để tăng hiệu suất truy vấn,
+						Chỉ truy vấn những gì cần thiết, tạo stored procedure )
+						
+						
+Spring Core:
+	Hibernate -JPA/CRUD: có thể sử dụng Lombok để tự sinh ra getter/setter, constructor ... và tinh gọn chúng
+
+						
