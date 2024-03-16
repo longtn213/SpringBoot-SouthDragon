@@ -71,3 +71,19 @@ Spring Core:
 	
 	Application Architect :RestController -> Service -> DAO -> Database
 	
+	JpaRepository có tất cả basic CRUD để sử dụng (chỉ cần extends để dùng )
+	Spring Data Rest cũng giúp chúng ta về restController giống JpaRepository, chỉ cần 3 items :
+		1. Your entity : VD: Employee
+		2. JpaRepository : VD: EmployeeRepository extends JpaRepository
+		3. Maven POM dependency for : spring-boot-starter-data-rest
+	Spring Data Rest thì URL có form : 
+		1. First character of Entity type is lowcase 
+`		2. Then just adds an "s" to the entity		
+			(VD: Entity : Employee -> url :/employees)
+		*Note: In mapping PUT của Spring data rest thì cần Id trên URL để update
+	Spring Data Rest có cách xử lý Specify plural name /path with an annotation : @RepositoryRestResource(path="members")
+	
+	Spring Data Rest Configuration : https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.json
+		1.spring.data.rest.base-path : Base path to be used expose repository resources.
+		2.spring.data.rest.default-page-size : Default size of pages. (default page size : 20
+		3.Sort : VD: /employees?sort=lastName (default : accending )
