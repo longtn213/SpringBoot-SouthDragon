@@ -32,9 +32,42 @@ Dự án em đang làm : Công ty bên Nhật làm 2 năm , công nghệ cũ : S
 					Những câu lệnh SQL khi truy vấn của họ hầu như đã tối ưu 
 						( tạo index hợp lý để tăng hiệu suất truy vấn,
 						Chỉ truy vấn những gì cần thiết, tạo stored procedure )
-						
-						
+
 Spring Core:
 	Hibernate -JPA/CRUD: có thể sử dụng Lombok để tự sinh ra getter/setter, constructor ... và tinh gọn chúng
+	
+	Sự khác nhau giữa EntityManager và JPA Repository
+		EntityManager: bạn cần low-level control and flexibility 
+		JPA Repository: bạn muốn high-level of abstraction 
+		
+	Sử dụng câu lệnh để thay đổi AUTO_INCREMENT: 
+		ALTER TABLE student_tracker.student AUTO_INCREMENT = 3000;
+		TRUNCATE student_tracker.student;	
+	
+	JPQL in spring boot : 
+		ALL JPQL syntax is based on entity name and entity fields
+		JQPL named parameters are prefixed with a colon
+	
+	Có thể dùng Java Code spring để create database table ( not recommend for prodution )
+	
+	HTTP Response - status code
+		100-199: Information
+		200-299: Successful
+		300-399: Redirection
+		400-499: Client error ( 401: Authentication Reuired , 404: File not found )
+		500-599: Server error ( 500: Internal Server Error )
 
-						
+	Web Browser and Postman
+		GET request : simmilar 
+		POST , PUT :Postman has better support , Posting JSON data, setting content type , Passing HTTP request headers, authentication ..
+		
+	Data binding is the process of converting JSON data to a Java POJO
+	Spring Boot Start Web automatically includes dependency for Jackson - > Help convert two side between JSON  <-> Java POJO code
+	
+	Cách để API design process
+		1. Review API requirements
+		2. Indentify main resource / entity
+		3. Use HTTP methods to assign action on resource
+	
+	Application Architect :RestController -> Service -> DAO -> Database
+	
