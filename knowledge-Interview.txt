@@ -87,3 +87,11 @@ Spring Core:
 		1.spring.data.rest.base-path : Base path to be used expose repository resources.
 		2.spring.data.rest.default-page-size : Default size of pages. (default page size : 20
 		3.Sort : VD: /employees?sort=lastName (default : accending )
+		
+	Spring Security : Syntax ** : match on all sub-paths
+	
+	Spring Security Database Schema: 
+				Users:                   authoritiee
+					username                username
+					password       <->      authority(roles)
+					enabled
