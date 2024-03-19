@@ -70,7 +70,9 @@ Spring Core:
 		3. Use HTTP methods to assign action on resource
 	
 	Application Architect :RestController -> Service -> DAO -> Database
-	
+
+
+Spring Data Rest :
 	JpaRepository có tất cả basic CRUD để sử dụng (chỉ cần extends để dùng )
 	Spring Data Rest cũng giúp chúng ta về restController giống JpaRepository, chỉ cần 3 items :
 		1. Your entity : VD: Employee
@@ -87,7 +89,8 @@ Spring Core:
 		1.spring.data.rest.base-path : Base path to be used expose repository resources.
 		2.spring.data.rest.default-page-size : Default size of pages. (default page size : 20
 		3.Sort : VD: /employees?sort=lastName (default : accending )
-		
+
+Spring Security:		
 	Spring Security : Syntax ** : match on all sub-paths
 	
 	Spring Security Database Schema: 
@@ -95,3 +98,17 @@ Spring Core:
 					username                username
 					password       <->      authority(roles)
 					enabled
+
+Spring MVC:				
+	Thymeleaf with Spring boot : seperate project unrelated to spring.io ( can create Java app with Thymeleaf, not need for spring)
+								Thymeleaf process : Web browser -> Spring MVC Controller -> Thymeleaf template
+	@RestController is not working with Thymeleaf (@Controller)
+	
+	Component of Spring MVC Application:
+		A set of web pages to layout UI components (Web Pages)
+		A collection of Spring beans (controllers, services, etc…) ( Beans)
+		Spring configuration (XML, Annotations or Java) (Spring Configuration)
+	
+	Spring MVC works : Web Browser -> Front Controller -> (Model) Controller -> (Model) View Template -> (Web browser)
+	
+	@RequestParam Annotation : Spring will read param from the request , and then bind it to the variable
