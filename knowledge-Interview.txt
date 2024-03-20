@@ -112,3 +112,10 @@ Spring MVC:
 	Spring MVC works : Web Browser -> Front Controller -> (Model) Controller -> (Model) View Template -> (Web browser)
 	
 	@RequestParam Annotation : Spring will read param from the request , and then bind it to the variable
+	@PostMapping : the data is NOT appended to URL, is sent in HTTP Request Message Body
+	
+	Data Binding: *{firstName} is shortcut syntax for: ${student.firstName}
+	
+	Bean Validate : https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html
+	
+	Learn regex :https://docs.oracle.com/javase/tutorial/essential/regex/index.html
