@@ -31,7 +31,8 @@ Dự án em đang làm : Công ty bên Nhật làm 2 năm , công nghệ cũ : S
 					hầu như là toàn làm chủ yếu về nativeSQL , 
 					Những câu lệnh SQL khi truy vấn của họ hầu như đã tối ưu 
 						( tạo index hợp lý để tăng hiệu suất truy vấn,
-						Chỉ truy vấn những gì cần thiết, tạo stored procedure )
+						Chỉ truy vấn những gì cần thiết, tạo stored procedure). Công việc của em khi làm việc với database thì hầu như là sửa theo yêu cầu của khách hàng 
+					Công việc của bọn em : khách hàng đưa requirement về qua Bridge , bọn em tìm hiểu, trao đổi và đưa ra câu hỏi (nếu có) để giải quyết các vấn đề  
 
 Spring Core:
 	Hibernate -JPA/CRUD: có thể sử dụng Lombok để tự sinh ra getter/setter, constructor ... và tinh gọn chúng
