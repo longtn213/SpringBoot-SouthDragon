@@ -2,7 +2,13 @@ package SouthDragon.AOPDemo.dao;
 
 import SouthDragon.AOPDemo.Account;
 
+import java.util.List;
+
 public interface AccountDAO {
+
+//    add a new method : findAccountS()
+    List<Account> findAccounts();
+    List<Account> findAccounts(boolean tripWire);
 
     void addAccount(Account theAccount, boolean vipFlag);
 
